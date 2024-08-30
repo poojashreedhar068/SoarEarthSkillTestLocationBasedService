@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: 'sha256:2c42adaf34dfb8faf850ebb2aed4cd40aca0b37090c3b69fcfb4ff7b70868159'
+    build:
+      context: target/generated-test-sources/test-annotations
+    container_name: SoarEarthSpringProject
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:8100/soarProject?currentSchema=soarEarth
+      - SPRING_DATASOURCE_USERNAME=$YOUR_USERNAME
+      - SPRING_DATASOURCE_PASSWORD=$YOUR_PASSWORD
+    ports:
+      - 8080:8080
