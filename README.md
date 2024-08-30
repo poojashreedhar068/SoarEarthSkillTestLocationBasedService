@@ -1,4 +1,3 @@
-# SoarEarthSkillTestLocationBasedService
 # SoarEarth Location Based Service API Skill Test
 
 To develop a simple backend API for a location-based service. The service
